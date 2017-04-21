@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(
 		glue = "com/cbt/stepdefs",
 		features = "./src/test/resources/features/login",
-				format = {"html:target/cucumber-report/login"}
+				format = {"html:target/cucumber-report/login", 
+						"json:target/cucumber-report/login/cucumber.json"}
 		)
 public class LoginRunner {
 

@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(
 		glue = "com/cbt/stepdefs",
 		features = "./src/test/resources/features/search",
-		format = {"html:target/cucumber-report/search"}
+		format = {"html:target/cucumber-report/search", 
+				"json:target/cucumber-report/search/cucumber.json"}
 		)
 public class SearchRunner {
 
